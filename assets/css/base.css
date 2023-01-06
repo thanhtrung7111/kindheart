@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+    --body-font: 'Poppins', sans-serif;
+
+    --first-color:#5bc1ac ;
+    --second-color:#5a6f80 ;
+    --third-color:#f0f8ff;
+    --transparent-color:transparent;
+    --title-color: ;
+    --text-color: rgb(148, 148, 148);
+    --white-color:#fff;
+    --body-color: #fff;
+
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .938rem;
+    --smaller-font-size: .875rem;
+
+    --z-fixed: 100;
+    --z-tootip: 10;
+}
+
+@media screen and (max-width:1024px) {
+    :root {
+        --biggest-font-size: 3rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    background-color: var(--body-color);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+
+.btn{
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.rounded-first{
+    border-color: var(--first-color);
+}
+
+.rounded-second{
+    border-color: var(--second-color);
+}
+
+.transition-all{
+    transition: all .3s linear;
+}
+
+.section{
+    padding-block: 7rem 3rem;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.border-none{
+    border: none;
+}
+.border-first{
+    border: 1px solid var(--first-color);
+}
+.border-second{
+    border: 1px solid var(--second-color);
+}
+.border-third{
+    border: 1px solid var(--third-color);
+}
+
+.outline-none{
+    outline: none;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.hover\:text-first:hover{
+    color: var(--first-color);
+}
